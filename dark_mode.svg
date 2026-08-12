@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" font-family="Consolas,monospace" width="1200px" height="850px" font-size="16px" xml:space="preserve">
 <ns0:style>
 .key {fill: #AE75DA;}
@@ -8,7 +8,7 @@
 .cc {fill: #616e7f;}
 text, tspan {white-space: pre;}
 </ns0:style>
-<ns0:rect width="1200px" height="850px" fill="#161b22" />
+<ns0:rect width="1200px" height="850px" fill="#161b22"/>
 <ns0:text x="15" y="30" fill="#c9d1d9">
 <ns0:tspan x="15" y="30">                                                        </ns0:tspan>
 <ns0:tspan x="15" y="50">                                                        </ns0:tspan>
@@ -73,9 +73,9 @@ text, tspan {white-space: pre;}
 <ns0:tspan x="580" y="570">- GitHub Stats --------------------------------------------</ns0:tspan>
 <ns0:tspan x="580" y="600"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Repos</ns0:tspan>:....................... <ns0:tspan class="value" id="repo_data">125</ns0:tspan> {<ns0:tspan class="key">Contributed</ns0:tspan>: <ns0:tspan class="value" id="contrib_data">141</ns0:tspan>}</ns0:tspan>
 <ns0:tspan x="580" y="630"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Stars</ns0:tspan>:....................... <ns0:tspan class="value" id="star_data">96</ns0:tspan></ns0:tspan>
-<ns0:tspan x="580" y="660"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Commits</ns0:tspan>:..................... <ns0:tspan class="value" id="commit_data">14,032</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="660"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Commits</ns0:tspan>:..................... <ns0:tspan class="value" id="commit_data">14,034</ns0:tspan></ns0:tspan>
 <ns0:tspan x="580" y="690"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Followers</ns0:tspan>:................... <ns0:tspan class="value" id="follower_data">41</ns0:tspan></ns0:tspan>
-<ns0:tspan x="580" y="720"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Lines of Code</ns0:tspan>:............... <ns0:tspan class="value" id="loc_data">14,590,280</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="720"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Lines of Code</ns0:tspan>:............... <ns0:tspan class="value" id="loc_data">14,590,489</ns0:tspan></ns0:tspan>
 <ns0:tspan x="580" y="750"> --------------------------------------------</ns0:tspan>
 <ns0:tspan x="580" y="780"><ns0:tspan class="cc">// I have one daughter, but all the rest</ns0:tspan></ns0:tspan>
 <ns0:tspan x="580" y="810"><ns0:tspan class="cc">// are my sons in this game.</ns0:tspan></ns0:tspan>
