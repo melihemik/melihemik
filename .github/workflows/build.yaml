@@ -1,13 +1,26 @@
 name: README build
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
+
 permissions:
     contents: write
+
 on:
     push:
         branches:
             - main
+        paths-ignore:
+            - 'dark_mode.png'
+            - 'light_mode.png'
+            - 'dark_mode.svg'
+            - 'light_mode.svg'
+            - 'cache/**'
     schedule:
         - cron: "0 4 * * *"
     workflow_dispatch:
+
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -15,7 +28,7 @@ jobs:
             - name: Checkout repository
               uses: actions/checkout@v4
               with:
-                  fetch-depth: 1
+                  fetch-depth: 0
 
             - name: Get Python 3.11
               uses: actions/setup-python@v5
@@ -40,9 +53,11 @@ jobs:
 
             - name: Commit and push changes
               run: |-
-                  git add dark_mode.svg light_mode.svg dark_mode.png light_mode.png cache/
-                  git diff --staged
                   git config --global user.email "melihemik@noirlang.tr"
                   git config --global user.name "melihemik[bot]"
-                  git diff --staged --quiet || git commit -m "bot: auto update README stats - $(date +'%Y-%m-%d')"
-                  git push
+                  git add dark_mode.svg light_mode.svg dark_mode.png light_mode.png cache/
+                  if ! git diff --staged --quiet; then
+                      git commit -m "bot: auto update README stats - $(date +'%Y-%m-%d') [skip ci]"
+                      git pull --rebase origin main
+                      git push origin main
+                  fi
