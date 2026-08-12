@@ -51,8 +51,6 @@ text, tspan {white-space: pre;}
 <tspan x="15" y="790">                                                        </tspan>
 <tspan x="15" y="810">                                                        </tspan>
 </text>
-<circle cx="975" cy="70" r="8" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.6"/>
-<circle cx="975" cy="70" r="4" fill="#22c55e"><animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/></circle>
 <text x="580" y="30" fill="#c9d1d9">
 <tspan x="580" y="30" fill="#c9d1d9">github@melihemik ---------------------------------------------</tspan>
 <tspan x="580" y="60"><tspan class="cc">. </tspan><tspan class="key">Status</tspan>:...................... <tspan class="value">Running (stable)</tspan></tspan>
@@ -73,11 +71,13 @@ text, tspan {white-space: pre;}
 <tspan x="580" y="510"><tspan class="cc">. </tspan><tspan class="key">Documentation</tspan>:............... <a href="https://melihemik.com.tr" target="_blank"><tspan class="value">melihemik.com.tr</tspan></a></tspan>
 <tspan x="580" y="540"><tspan class="cc">. </tspan><tspan class="key">LinkedIn</tspan>:.................... <a href="https://linkedin.com/in/melihemik" target="_blank"><tspan class="value">in/melihemik</tspan></a></tspan>
 <tspan x="580" y="570">- GitHub Stats --------------------------------------------</tspan>
-<tspan x="580" y="600"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:....................... <tspan class="value">124</tspan> {<tspan class="key">Contributed</tspan>: <tspan class="value">140</tspan>} | <tspan class="key">Stars</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">107</tspan></tspan>
-<tspan x="580" y="630"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>:..................... <tspan class="value">7,375</tspan> | <tspan class="key">Followers</tspan>:<tspan class="cc"> ....... </tspan><tspan class="value">41</tspan></tspan>
-<tspan x="580" y="660"><tspan class="cc">. </tspan><tspan class="key">Lines of Code</tspan>:............... <tspan class="value">7,736,869</tspan> ( <tspan class="addColor">8,236,129</tspan><tspan class="addColor">++</tspan>, <tspan class="delColor">499,260</tspan><tspan class="delColor">--</tspan> )</tspan>
-<tspan x="580" y="690"> --------------------------------------------</tspan>
-<tspan x="580" y="720"><tspan class="cc">// I have one daughter, but all the rest</tspan></tspan>
-<tspan x="580" y="750"><tspan class="cc">// are my sons in this game.</tspan></tspan>
+<tspan x="580" y="600"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:....................... <tspan class="value">124</tspan> {<tspan class="key">Contributed</tspan>: <tspan class="value">140</tspan>}</tspan>
+<tspan x="580" y="630"><tspan class="cc">. </tspan><tspan class="key">Stars</tspan>:....................... <tspan class="value">107</tspan></tspan>
+<tspan x="580" y="660"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>:..................... <tspan class="value">7,375</tspan></tspan>
+<tspan x="580" y="690"><tspan class="cc">. </tspan><tspan class="key">Followers</tspan>:................... <tspan class="value">41</tspan></tspan>
+<tspan x="580" y="720"><tspan class="cc">. </tspan><tspan class="key">Lines of Code</tspan>:............... <tspan class="value">7,736,869</tspan>  <tspan class="addColor">8,236,129++</tspan>, <tspan class="delColor">499,260--</tspan></tspan>
+<tspan x="580" y="750"> --------------------------------------------</tspan>
+<tspan x="580" y="780"><tspan class="cc">// I have one daughter, but all the rest</tspan></tspan>
+<tspan x="580" y="810"><tspan class="cc">// are my sons in this game.</tspan></tspan>
 </text>
 </svg>
