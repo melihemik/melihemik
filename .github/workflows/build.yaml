@@ -1,0 +1,48 @@
+name: README build
+permissions:
+    contents: write
+on:
+    push:
+        branches:
+            - main
+    schedule:
+        - cron: "0 4 * * *"
+    workflow_dispatch:
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 1
+
+            - name: Get Python 3.11
+              uses: actions/setup-python@v5
+              with:
+                  python-version: "3.11"
+                  cache: "pip"
+                  cache-dependency-path: cache/requirements.txt
+
+            - name: Install dependencies
+              run: |
+                  sudo apt-get update && sudo apt-get install -y librsvg2-bin
+                  python -m pip install -r cache/requirements.txt
+
+            - name: Update README stats
+              env:
+                  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN || secrets.GITHUB_TOKEN }}
+                  USER_NAME: melihemik
+              run: python today.py
+
+            - name: Render PNGs
+              run: python convert.py
+
+            - name: Commit and push changes
+              run: |-
+                  git add dark_mode.svg light_mode.svg dark_mode.png light_mode.png cache/
+                  git diff --staged
+                  git config --global user.email "melihemik@noirlang.tr"
+                  git config --global user.name "melihemik[bot]"
+                  git diff --staged --quiet || git commit -m "bot: auto update README stats - $(date +'%Y-%m-%d')"
+                  git push

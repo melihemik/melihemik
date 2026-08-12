@@ -1,83 +1,83 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" font-family="Consolas,monospace" width="1200px" height="850px" font-size="16px" xml:space="preserve">
-<style>
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" font-family="Consolas,monospace" width="1200px" height="850px" font-size="16px" xml:space="preserve">
+<ns0:style>
 .key {fill: #AE75DA;}
 .value {fill: #a5d6ff;}
 .addColor {fill: #3fb950;}
 .delColor {fill: #f85149;}
 .cc {fill: #616e7f;}
 text, tspan {white-space: pre;}
-</style>
-<rect width="1200px" height="850px" fill="#161b22"/>
-<text x="15" y="30" fill="#c9d1d9">
-<tspan x="15" y="30">                                                        </tspan>
-<tspan x="15" y="50">                                                        </tspan>
-<tspan x="15" y="70">                                                        </tspan>
-<tspan x="15" y="90">                                                        </tspan>
-<tspan x="15" y="110">                                                        </tspan>
-<tspan x="15" y="130">                                                        </tspan>
-<tspan x="15" y="150">                                                        </tspan>
-<tspan x="15" y="170">                                                        </tspan>
-<tspan x="15" y="190">                                                        </tspan>
-<tspan x="15" y="210">                                ░░░░░▒▒░░░░             </tspan>
-<tspan x="15" y="230">                              ░░▒▓▓▓▓▒▒▒▒▒▒▒░░          </tspan>
-<tspan x="15" y="250">                          ░▒▒▓▓▓▓▓▓▓▒▒▓▓▓▓▒▒▓▒▒▒░       </tspan>
-<tspan x="15" y="270">                      ░▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓       </tspan>
-<tspan x="15" y="290">                      ▒▓▓▓▒▒▒░░ ░░░░▒▒▒▒▓▓▓▓▓▓▓▓▓░      </tspan>
-<tspan x="15" y="310">                       ▒▓░                 ░░▒▒▓▒       </tspan>
-<tspan x="15" y="330">                      ░▓        ░      ▒        ▓░      </tspan>
-<tspan x="15" y="350">                      ▒▒                        ▒▒      </tspan>
-<tspan x="15" y="370">                      ░▓                        ▒▒      </tspan>
-<tspan x="15" y="390">                       ▓░      ░▒░░░░░          ▒▒      </tspan>
-<tspan x="15" y="410">                       ░▓░       ░░░            ░▒      </tspan>
-<tspan x="15" y="430">     ░░                 ░▓▒░                  ░░▒▓      </tspan>
-<tspan x="15" y="450">     ░░                   ░░▒▒▒▒░        ░░░░   ░▓      </tspan>
-<tspan x="15" y="470">     ░░                      ▒▓▒▒░   ▓▓░░       ░▒      </tspan>
-<tspan x="15" y="490">     ░░            ░▒░░░░░░░ ░▓      ░░░        ▒▒      </tspan>
-<tspan x="15" y="510">░░░░░░░░░░░░░░░░   ▒▒▒░      ░▓                 ▒▒      </tspan>
-<tspan x="15" y="530">▓▓▓▓▓▒▒▒▒▓▓▓▓▓▓▓░            ░▓                 ▒▒      </tspan>
-<tspan x="15" y="550">▓░░░░░░░░ ▒▒ ░▓░              ▓░                ▒▒      </tspan>
-<tspan x="15" y="570">▓         ░▒  ▒▒              ▓░                ▒▒      </tspan>
-<tspan x="15" y="590">▒░        ░▒  ▒▒              ▓                 ░▓      </tspan>
-<tspan x="15" y="610">▒░        ░▒  ▒▒             ░▓                 ░▓      </tspan>
-<tspan x="15" y="630">                                                        </tspan>
-<tspan x="15" y="650">                                                        </tspan>
-<tspan x="15" y="670">                                                        </tspan>
-<tspan x="15" y="690">                                                        </tspan>
-<tspan x="15" y="710">                                                        </tspan>
-<tspan x="15" y="730">                                                        </tspan>
-<tspan x="15" y="750">                                                        </tspan>
-<tspan x="15" y="770">                                                        </tspan>
-<tspan x="15" y="790">                                                        </tspan>
-<tspan x="15" y="810">                                                        </tspan>
-</text>
-<text x="580" y="30" fill="#c9d1d9">
-<tspan x="580" y="30" fill="#c9d1d9">github@melihemik ---------------------------------------------</tspan>
-<tspan x="580" y="60"><tspan class="cc">. </tspan><tspan class="key">Status</tspan>:...................... <tspan class="value">Running (stable)</tspan></tspan>
-<tspan x="580" y="90"><tspan class="cc">. </tspan><tspan class="key">OS</tspan>:.......................... <tspan class="value">Melih Emik</tspan></tspan>
-<tspan x="580" y="120"><tspan class="cc">. </tspan><tspan class="key">Uptime</tspan>:...................... <tspan class="value">21 years, 0 months, 18 days</tspan></tspan>
-<tspan x="580" y="150"><tspan class="cc">. </tspan><tspan class="key">Host</tspan>:........................ <tspan class="value">Turkey (local)</tspan></tspan>
-<tspan x="580" y="180"><tspan class="cc">. </tspan><tspan class="key">Kernel</tspan>:...................... <tspan class="value">Developer &amp; Engineer</tspan></tspan>
-<tspan x="580" y="210"><tspan class="cc">. </tspan><tspan class="key">Environment</tspan>:................. <tspan class="value">Zed, nvim</tspan></tspan>
-<tspan x="580" y="240"><tspan class="cc">. </tspan><tspan class="key">Tools</tspan>:....................... <tspan class="value">Git, Linux, Docker</tspan></tspan>
-<tspan x="580" y="270"><tspan class="cc">. </tspan><tspan class="key">Languages.Programming</tspan>:....... <tspan class="value">Rust, Go, Python, JS</tspan></tspan>
-<tspan x="580" y="300"><tspan class="cc">. </tspan><tspan class="key">Languages.Real</tspan>:.............. <tspan class="value">Turkish, English</tspan></tspan>
-<tspan x="580" y="330"><tspan class="cc">. </tspan><tspan class="key">Focus</tspan>:....................... <tspan class="value">Systems, Forensics</tspan></tspan>
-<tspan x="580" y="360"><tspan class="cc">. </tspan><tspan class="key">Interests</tspan>:................... <tspan class="value">Digital Forensics, Security</tspan></tspan>
-<tspan x="580" y="390"><tspan class="cc">. </tspan><tspan class="key">Hobbies</tspan>:..................... <tspan class="value">Coding, Learning, Music</tspan></tspan>
-<tspan x="580" y="420">- Contact --------------------------------------------</tspan>
-<tspan x="580" y="450"><tspan class="cc">. </tspan><tspan class="key">Timezone</tspan>:.................... <a href="https://time.is/TRT" target="_blank"><tspan class="value">TRT (UTC+3)</tspan></a></tspan>
-<tspan x="580" y="480"><tspan class="cc">. </tspan><tspan class="key">Email</tspan>:....................... <a href="mailto:melihemik@noirlang.tr" target="_blank"><tspan class="value">melihemik@noirlang.tr</tspan></a></tspan>
-<tspan x="580" y="510"><tspan class="cc">. </tspan><tspan class="key">Documentation</tspan>:............... <a href="https://melihemik.com.tr" target="_blank"><tspan class="value">melihemik.com.tr</tspan></a></tspan>
-<tspan x="580" y="540"><tspan class="cc">. </tspan><tspan class="key">LinkedIn</tspan>:.................... <a href="https://linkedin.com/in/melihemik" target="_blank"><tspan class="value">in/melihemik</tspan></a></tspan>
-<tspan x="580" y="570">- GitHub Stats --------------------------------------------</tspan>
-<tspan x="580" y="600"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:....................... <tspan class="value">124</tspan> {<tspan class="key">Contributed</tspan>: <tspan class="value">140</tspan>}</tspan>
-<tspan x="580" y="630"><tspan class="cc">. </tspan><tspan class="key">Stars</tspan>:....................... <tspan class="value">107</tspan></tspan>
-<tspan x="580" y="660"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>:..................... <tspan class="value">7,375</tspan></tspan>
-<tspan x="580" y="690"><tspan class="cc">. </tspan><tspan class="key">Followers</tspan>:................... <tspan class="value">41</tspan></tspan>
-<tspan x="580" y="720"><tspan class="cc">. </tspan><tspan class="key">Lines of Code</tspan>:............... <tspan class="value">7,736,869</tspan>  <tspan class="addColor">8,236,129++</tspan>, <tspan class="delColor">499,260--</tspan></tspan>
-<tspan x="580" y="750"> --------------------------------------------</tspan>
-<tspan x="580" y="780"><tspan class="cc">// I have one daughter, but all the rest</tspan></tspan>
-<tspan x="580" y="810"><tspan class="cc">// are my sons in this game.</tspan></tspan>
-</text>
-</svg>
+</ns0:style>
+<ns0:rect width="1200px" height="850px" fill="#161b22" />
+<ns0:text x="15" y="30" fill="#c9d1d9">
+<ns0:tspan x="15" y="30">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="50">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="70">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="90">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="110">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="130">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="150">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="170">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="190">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="210">                                ░░░░░▒▒░░░░             </ns0:tspan>
+<ns0:tspan x="15" y="230">                              ░░▒▓▓▓▓▒▒▒▒▒▒▒░░          </ns0:tspan>
+<ns0:tspan x="15" y="250">                          ░▒▒▓▓▓▓▓▓▓▒▒▓▓▓▓▒▒▓▒▒▒░       </ns0:tspan>
+<ns0:tspan x="15" y="270">                      ░▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓       </ns0:tspan>
+<ns0:tspan x="15" y="290">                      ▒▓▓▓▒▒▒░░ ░░░░▒▒▒▒▓▓▓▓▓▓▓▓▓░      </ns0:tspan>
+<ns0:tspan x="15" y="310">                       ▒▓░                 ░░▒▒▓▒       </ns0:tspan>
+<ns0:tspan x="15" y="330">                      ░▓        ░      ▒        ▓░      </ns0:tspan>
+<ns0:tspan x="15" y="350">                      ▒▒                        ▒▒      </ns0:tspan>
+<ns0:tspan x="15" y="370">                      ░▓                        ▒▒      </ns0:tspan>
+<ns0:tspan x="15" y="390">                       ▓░      ░▒░░░░░          ▒▒      </ns0:tspan>
+<ns0:tspan x="15" y="410">                       ░▓░       ░░░            ░▒      </ns0:tspan>
+<ns0:tspan x="15" y="430">     ░░                 ░▓▒░                  ░░▒▓      </ns0:tspan>
+<ns0:tspan x="15" y="450">     ░░                   ░░▒▒▒▒░        ░░░░   ░▓      </ns0:tspan>
+<ns0:tspan x="15" y="470">     ░░                      ▒▓▒▒░   ▓▓░░       ░▒      </ns0:tspan>
+<ns0:tspan x="15" y="490">     ░░            ░▒░░░░░░░ ░▓      ░░░        ▒▒      </ns0:tspan>
+<ns0:tspan x="15" y="510">░░░░░░░░░░░░░░░░   ▒▒▒░      ░▓                 ▒▒      </ns0:tspan>
+<ns0:tspan x="15" y="530">▓▓▓▓▓▒▒▒▒▓▓▓▓▓▓▓░            ░▓                 ▒▒      </ns0:tspan>
+<ns0:tspan x="15" y="550">▓░░░░░░░░ ▒▒ ░▓░              ▓░                ▒▒      </ns0:tspan>
+<ns0:tspan x="15" y="570">▓         ░▒  ▒▒              ▓░                ▒▒      </ns0:tspan>
+<ns0:tspan x="15" y="590">▒░        ░▒  ▒▒              ▓                 ░▓      </ns0:tspan>
+<ns0:tspan x="15" y="610">▒░        ░▒  ▒▒             ░▓                 ░▓      </ns0:tspan>
+<ns0:tspan x="15" y="630">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="650">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="670">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="690">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="710">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="730">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="750">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="770">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="790">                                                        </ns0:tspan>
+<ns0:tspan x="15" y="810">                                                        </ns0:tspan>
+</ns0:text>
+<ns0:text x="580" y="30" fill="#c9d1d9">
+<ns0:tspan x="580" y="30" fill="#c9d1d9">github@melihemik ---------------------------------------------</ns0:tspan>
+<ns0:tspan x="580" y="60"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Status</ns0:tspan>:...................... <ns0:tspan class="value">Running (stable)</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="90"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">OS</ns0:tspan>:.......................... <ns0:tspan class="value">Melih Emik</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="120"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Uptime</ns0:tspan>:...................... <ns0:tspan class="value" id="age_data">21 years, 0 months, 18 days</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="150"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Host</ns0:tspan>:........................ <ns0:tspan class="value">Turkey (local)</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="180"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Kernel</ns0:tspan>:...................... <ns0:tspan class="value">Developer &amp; Engineer</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="210"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Environment</ns0:tspan>:................. <ns0:tspan class="value">Zed, nvim</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="240"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Tools</ns0:tspan>:....................... <ns0:tspan class="value">Git, Linux, Docker</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="270"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Languages.Programming</ns0:tspan>:....... <ns0:tspan class="value">Rust, Go, Python, JS</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="300"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Languages.Real</ns0:tspan>:.............. <ns0:tspan class="value">Turkish, English</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="330"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Focus</ns0:tspan>:....................... <ns0:tspan class="value">Systems, Forensics</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="360"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Interests</ns0:tspan>:................... <ns0:tspan class="value">Digital Forensics, Security</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="390"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Hobbies</ns0:tspan>:..................... <ns0:tspan class="value">Coding, Learning, Music</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="420">- Contact --------------------------------------------</ns0:tspan>
+<ns0:tspan x="580" y="450"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Timezone</ns0:tspan>:.................... <ns0:a href="https://time.is/TRT" target="_blank"><ns0:tspan class="value">TRT (UTC+3)</ns0:tspan></ns0:a></ns0:tspan>
+<ns0:tspan x="580" y="480"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Email</ns0:tspan>:....................... <ns0:a href="mailto:melihemik@noirlang.tr" target="_blank"><ns0:tspan class="value">melihemik@noirlang.tr</ns0:tspan></ns0:a></ns0:tspan>
+<ns0:tspan x="580" y="510"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Documentation</ns0:tspan>:............... <ns0:a href="https://melihemik.com.tr" target="_blank"><ns0:tspan class="value">melihemik.com.tr</ns0:tspan></ns0:a></ns0:tspan>
+<ns0:tspan x="580" y="540"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">LinkedIn</ns0:tspan>:.................... <ns0:a href="https://linkedin.com/in/melihemik" target="_blank"><ns0:tspan class="value">in/melihemik</ns0:tspan></ns0:a></ns0:tspan>
+<ns0:tspan x="580" y="570">- GitHub Stats --------------------------------------------</ns0:tspan>
+<ns0:tspan x="580" y="600"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Repos</ns0:tspan>:....................... <ns0:tspan class="value" id="repo_data">124</ns0:tspan> {<ns0:tspan class="key">Contributed</ns0:tspan>: <ns0:tspan class="value" id="contrib_data">140</ns0:tspan>}</ns0:tspan>
+<ns0:tspan x="580" y="630"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Stars</ns0:tspan>:....................... <ns0:tspan class="value" id="star_data">107</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="660"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Commits</ns0:tspan>:..................... <ns0:tspan class="value" id="commit_data">7,375</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="690"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Followers</ns0:tspan>:................... <ns0:tspan class="value" id="follower_data">41</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="720"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Lines of Code</ns0:tspan>:............... <ns0:tspan class="value" id="loc_data">7,736,869</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="750"> --------------------------------------------</ns0:tspan>
+<ns0:tspan x="580" y="780"><ns0:tspan class="cc">// I have one daughter, but all the rest</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="810"><ns0:tspan class="cc">// are my sons in this game.</ns0:tspan></ns0:tspan>
+</ns0:text>
+</ns0:svg>
