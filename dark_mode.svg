@@ -55,7 +55,7 @@ text, tspan {white-space: pre;}
 <ns0:tspan x="580" y="30" fill="#c9d1d9">github@melihemik ---------------------------------------------</ns0:tspan>
 <ns0:tspan x="580" y="60"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Status</ns0:tspan>:...................... <ns0:tspan class="value">Running (stable)</ns0:tspan></ns0:tspan>
 <ns0:tspan x="580" y="90"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">OS</ns0:tspan>:.......................... <ns0:tspan class="value">Melih Emik</ns0:tspan></ns0:tspan>
-<ns0:tspan x="580" y="120"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Uptime</ns0:tspan>:...................... <ns0:tspan class="value" id="age_data">21 years, 1 month, 3 days</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="120"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Uptime</ns0:tspan>:...................... <ns0:tspan class="value" id="age_data">21 years, 1 month, 4 days</ns0:tspan></ns0:tspan>
 <ns0:tspan x="580" y="150"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Host</ns0:tspan>:........................ <ns0:tspan class="value">Turkey (local)</ns0:tspan></ns0:tspan>
 <ns0:tspan x="580" y="180"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Kernel</ns0:tspan>:...................... <ns0:tspan class="value">Developer &amp; Engineer</ns0:tspan></ns0:tspan>
 <ns0:tspan x="580" y="210"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Environment</ns0:tspan>:................. <ns0:tspan class="value">Zed, nvim</ns0:tspan></ns0:tspan>
@@ -73,9 +73,9 @@ text, tspan {white-space: pre;}
 <ns0:tspan x="580" y="570">- GitHub Stats --------------------------------------------</ns0:tspan>
 <ns0:tspan x="580" y="600"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Repos</ns0:tspan>:....................... <ns0:tspan class="value" id="repo_data">131</ns0:tspan> {<ns0:tspan class="key">Contributed</ns0:tspan>: <ns0:tspan class="value" id="contrib_data">148</ns0:tspan>}</ns0:tspan>
 <ns0:tspan x="580" y="630"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Stars</ns0:tspan>:....................... <ns0:tspan class="value" id="star_data">97</ns0:tspan></ns0:tspan>
-<ns0:tspan x="580" y="660"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Commits</ns0:tspan>:..................... <ns0:tspan class="value" id="commit_data">14,822</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="660"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Commits</ns0:tspan>:..................... <ns0:tspan class="value" id="commit_data">14,824</ns0:tspan></ns0:tspan>
 <ns0:tspan x="580" y="690"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Followers</ns0:tspan>:................... <ns0:tspan class="value" id="follower_data">45</ns0:tspan></ns0:tspan>
-<ns0:tspan x="580" y="720"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Lines of Code</ns0:tspan>:............... <ns0:tspan class="value" id="loc_data">17,813,776</ns0:tspan></ns0:tspan>
+<ns0:tspan x="580" y="720"><ns0:tspan class="cc">. </ns0:tspan><ns0:tspan class="key">Lines of Code</ns0:tspan>:............... <ns0:tspan class="value" id="loc_data">17,814,679</ns0:tspan></ns0:tspan>
 <ns0:tspan x="580" y="750"> --------------------------------------------</ns0:tspan>
 <ns0:tspan x="580" y="780"><ns0:tspan class="cc">// I have one daughter, but all the rest</ns0:tspan></ns0:tspan>
 <ns0:tspan x="580" y="810"><ns0:tspan class="cc">// are my sons in this game.</ns0:tspan></ns0:tspan>
