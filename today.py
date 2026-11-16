@@ -114,6 +114,28 @@ def user_getter(username):
     return user_data['id'], user_data['followers']['totalCount']
 
 
+def get_pull_request_counts(username):
+    """Return (total, open) pull requests authored by the user.
+
+    The profile card is public, so only the counts are shown; private
+    repositories are included in the totals but their names are never exposed.
+    """
+    query = '''
+    query($login: String!) {
+        user(login: $login) {
+            pullRequests(first: 1) {
+                totalCount
+            }
+            openPullRequests: pullRequests(states: [OPEN], first: 1) {
+                totalCount
+            }
+        }
+    }'''
+    res = simple_request(query, {'login': username})
+    user = res['data']['user']
+    return user['pullRequests']['totalCount'], user['openPullRequests']['totalCount']
+
+
 def get_all_repositories(username):
     query = '''
     query ($login: String!, $cursor: String) {
@@ -353,7 +375,7 @@ def find_and_replace(root, element_id, new_text):
             return
 
 
-def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib_data, follower_data, loc_val):
+def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib_data, follower_data, loc_val, pr_data=None):
     tree = etree.parse(filename)
     root = tree.getroot()
     find_and_replace(root, 'age_data', age_data)
@@ -363,6 +385,8 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
     find_and_replace(root, 'contrib_data', f"{'{:,}'.format(contrib_data)}" if isinstance(contrib_data, int) else str(contrib_data))
     find_and_replace(root, 'follower_data', f"{'{:,}'.format(follower_data)}" if isinstance(follower_data, int) else str(follower_data))
     find_and_replace(root, 'loc_data', f"{'{:,}'.format(loc_val)}" if isinstance(loc_val, int) else str(loc_val))
+    if pr_data is not None:
+        find_and_replace(root, 'pr_data', f"{'{:,}'.format(pr_data)}" if isinstance(pr_data, int) else str(pr_data))
     tree.write(filename, encoding='utf-8', xml_declaration=True)
 
 
@@ -386,6 +410,12 @@ if __name__ == '__main__':
     author_id, follower_data = user_getter(USER_NAME)
     edges = get_all_repositories(USER_NAME)
 
+    try:
+        pr_total, pr_open = get_pull_request_counts(USER_NAME)
+    except Exception as e:
+        print(f"Warning: could not refresh pull request counts: {e}")
+        pr_total, pr_open = None, None
+
     stats = update_stats_and_cache(edges, author_id)
     archived_data = add_archive()
 
@@ -403,10 +433,12 @@ if __name__ == '__main__':
     print(f"  Total Commits: {total_commits:,}")
     print(f"  Followers: {follower_data}")
     print(f"  Lines of Code: {total_net_loc:,}")
+    if pr_total is not None:
+        print(f"  Pull Requests: {pr_total:,} ({pr_open:,} open)")
 
     for filename in ['dark_mode.svg', 'light_mode.svg']:
         if os.path.exists(filename):
-            svg_overwrite(filename, age_data, total_commits, owner_stars, owner_repos, total_contrib, follower_data, total_net_loc)
+            svg_overwrite(filename, age_data, total_commits, owner_stars, owner_repos, total_contrib, follower_data, total_net_loc, pr_total)
             print(f"Updated {filename}")
 
     print('SVGs updated successfully.')
