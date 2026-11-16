@@ -193,32 +193,28 @@ def recursive_loc(owner, repo_name, author_id, cursor=None, addition_total=0, de
         }
     }'''
     variables = {'repo_name': repo_name, 'owner': owner, 'author_id': author_id, 'cursor': cursor}
-    try:
-        res = simple_request(query, variables)
-        repo_obj = res.get('data', {}).get('repository')
-        if not repo_obj or not repo_obj.get('defaultBranchRef') or not repo_obj['defaultBranchRef'].get('target'):
-            return addition_total, deletion_total, my_commits
-
-        history = repo_obj['defaultBranchRef']['target'].get('history', {})
-        edges = history.get('edges', []) or []
-        for item in edges:
-            if not item or not isinstance(item, dict):
-                continue
-            commit_node = item.get('node')
-            if not commit_node or not isinstance(commit_node, dict):
-                continue
-            author = commit_node.get('author')
-            if author and author.get('user', {}).get('id') == author_id:
-                my_commits += 1
-                addition_total += commit_node.get('additions', 0)
-                deletion_total += commit_node.get('deletions', 0)
-
-        if history.get('pageInfo', {}).get('hasNextPage') and history['pageInfo'].get('endCursor'):
-            return recursive_loc(owner, repo_name, author_id, history['pageInfo']['endCursor'], addition_total, deletion_total, my_commits)
+    res = simple_request(query, variables)
+    repo_obj = res.get('data', {}).get('repository')
+    if not repo_obj or not repo_obj.get('defaultBranchRef') or not repo_obj['defaultBranchRef'].get('target'):
         return addition_total, deletion_total, my_commits
-    except Exception as e:
-        print(f"Warning: recursive_loc failed for {owner}/{repo_name}: {e}")
-        return addition_total, deletion_total, my_commits
+
+    history = repo_obj['defaultBranchRef']['target'].get('history', {})
+    edges = history.get('edges', []) or []
+    for item in edges:
+        if not item or not isinstance(item, dict):
+            continue
+        commit_node = item.get('node')
+        if not commit_node or not isinstance(commit_node, dict):
+            continue
+        author = commit_node.get('author')
+        if author and author.get('user', {}).get('id') == author_id:
+            my_commits += 1
+            addition_total += commit_node.get('additions', 0)
+            deletion_total += commit_node.get('deletions', 0)
+
+    if history.get('pageInfo', {}).get('hasNextPage') and history['pageInfo'].get('endCursor'):
+        return recursive_loc(owner, repo_name, author_id, history['pageInfo']['endCursor'], addition_total, deletion_total, my_commits)
+    return addition_total, deletion_total, my_commits
 
 
 def load_cache(filename, comment_size=7):
@@ -260,6 +256,7 @@ def update_stats_and_cache(edges, author_id):
     owner_repos_count = 0
     owner_stars_count = 0
     contributed_repos_count = len(edges)
+    seen_repos = set()
 
     for edge in edges:
         if not edge or not edge.get('node'):
@@ -275,6 +272,7 @@ def update_stats_and_cache(edges, author_id):
             owner_stars_count += node.get('stargazerCount', 0)
 
         repo_hash = hashlib.sha256(name_with_owner.encode('utf-8')).hexdigest()
+        seen_repos.add(repo_hash)
         default_branch = node.get('defaultBranchRef')
         history_total = 0
         if default_branch and default_branch.get('target') and default_branch['target'].get('history'):
@@ -282,14 +280,26 @@ def update_stats_and_cache(edges, author_id):
 
         # Check if cache is valid for this repo
         cached_entry = cache_dict.get(repo_hash)
-        if cached_entry and cached_entry[0] == history_total and (cached_entry[1] > 0 or history_total == 0):
+        if cached_entry and cached_entry[0] == history_total:
             # No changes, keep cached value
             pass
         else:
             # Commits changed or newly encountered repo
             owner, repo_name = name_with_owner.split('/')
-            additions, deletions, my_commits = recursive_loc(owner, repo_name, author_id)
+            try:
+                additions, deletions, my_commits = recursive_loc(owner, repo_name, author_id)
+            except Exception as e:
+                # Keep the previous numbers rather than replacing them with zeroes.
+                print(f"Warning: could not refresh {name_with_owner}: {e}")
+                continue
             cache_dict[repo_hash] = [history_total, my_commits, additions, deletions]
+
+    # Drop entries for repositories that were deleted or renamed. A rename adds a
+    # new hash and leaves the old one behind, which used to double count the
+    # commits and lines of code of every transferred repository.
+    for repo_hash in list(cache_dict):
+        if repo_hash not in seen_repos:
+            del cache_dict[repo_hash]
 
     save_cache(filename, comments, cache_dict, 7)
 

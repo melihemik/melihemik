@@ -18,7 +18,9 @@ on:
             - 'light_mode.svg'
             - 'cache/**'
     schedule:
-        - cron: "0 4 * * *"
+        # GitHub runs scheduled jobs late; hourly keeps the card from showing
+        # yesterday's numbers for most of the day.
+        - cron: "0 * * * *"
     workflow_dispatch:
 
 jobs:
